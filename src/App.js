@@ -6,13 +6,13 @@ import styled from '@emotion/styled'
 function App() {
   const [counter, setCounter] = React.useState(0)
   const handleClick = () => {
-    setCounter(0)
+    setCounter(counter + 1)
   }
-  React.useEffect( () => {
-    setInterval( () => {
-      setCounter( (c) => c + 1)
-    }, 1000)
-  }, [])
+  // React.useEffect( () => {
+  //   setInterval( () => {
+  //     setCounter( (c) => c + 1)
+  //   }, 1000)
+  // }, [])
   return (
     <div className="App">
       <header className="App-header">
