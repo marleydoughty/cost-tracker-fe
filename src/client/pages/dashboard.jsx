@@ -34,7 +34,7 @@ const BalanceCard = styled(Card)`
   color: white;
   flex-direction: column;
   margin: 60px 15px 60px 15px;
-  padding:20px;
+  padding:50px 20px 50px 20px;
   box-shadow: 0 2px 4px rgba(0,0,0,.4);
   border-radius: 30px;
 

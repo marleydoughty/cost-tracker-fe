@@ -37,6 +37,6 @@ export default DashboardCards;
 const CustomCard = styled(Card)`
 margin:15px;
 width:auto;
-height:50px;
+height:75px;
 border-radius:15px;
 `
