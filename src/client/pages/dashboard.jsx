@@ -10,7 +10,7 @@ export default function Dashboard() {
   return (
     <div className="App">
       <Header/>
-      <Container maxWidth="sm">
+      <Container maxWidth="md">
         <BalanceCard varient="outlined">
           <div className="balance-card-items">
             <p>Total Balance</p>
@@ -22,7 +22,6 @@ export default function Dashboard() {
       <BottomNavBar />
     </div>
   );
-
 }
 
 
@@ -36,7 +35,7 @@ const BalanceCard = styled(Card)`
   margin: 60px 15px 60px 15px;
   padding:50px 20px 50px 20px;
   box-shadow: 0 2px 4px rgba(0,0,0,.4);
-  border-radius: 30px;
+  border-radius: 15px;
 
   > *:not(:last-child) {
     margin-bottom: 10px;

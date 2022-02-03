@@ -38,5 +38,5 @@ const CustomCard = styled(Card)`
 margin:15px;
 width:auto;
 height:75px;
-border-radius:15px;
+border-radius:46px;
 `
