@@ -1,5 +1,5 @@
 import React from 'react';
-// import './dashboard.css';
+import './index.css';
 import Dashboard from './client/pages/dashboard';
 // import {Button} from '@mui/material'
 // import styled from '@emotion/styled'

@@ -12,10 +12,10 @@ export default function Dashboard() {
       <Header/>
       <Container maxWidth="md">
         <BalanceCard varient="outlined">
-          <div className="balance-card-items">
+          <BalanceCardItems>
             <p>Total Balance</p>
             <h1>$1,978.46</h1>
-          </div>
+          </BalanceCardItems>
         </BalanceCard>
         <DashboardCards/>
       </Container>
@@ -39,5 +39,20 @@ const BalanceCard = styled(Card)`
 
   > *:not(:last-child) {
     margin-bottom: 10px;
+  }
+`
+const BalanceCardItems = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  > p {
+     margin-bottom: 15px;
+  font-size: 22px;
+  },
+  h1 {
+  font-size: 36px;
+
   }
 `
