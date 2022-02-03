@@ -40,15 +40,15 @@ height:75px;
 border-radius:46px;
 `
 const CardItems = styled.div`
- display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  height: 75px;
-  margin-left:10px;
-  font-size: 20px;
+display: flex;
+align-items: center;
+justify-content: flex-start;
+height: 75px;
+margin-left:10px;
+font-size: 20px;
 
-  i {
-    font-size:26px;
-    margin:0 15px 0 15px;
-  }
+i {
+  font-size:26px;
+  margin:0 15px 0 15px;
+}
 `
