@@ -1,36 +1,37 @@
 import { Button } from '@mui/material'
 import styled from '@emotion/styled'
 import {Card} from '@mui/material'
-
+import { Container } from '@mui/material'
 const AddExpense = () =>{
   return(
     <>
       <Header>
-        <h1></h1>Add Expenses
+        <h2>Add Expenses</h2>
         <ExpenseContainer>$0</ExpenseContainer>
-
       </Header>
-      <CustomCard>
-        <CardItems>
-          <i className='far fa-clock'></i>
-          <p>Date</p>
-        </CardItems>
-      </CustomCard>
-      <CustomCard>
-        <CardItems>
-          <i className='far fa-sticky-note'></i>
-          <p>Notes</p>
-        </CardItems>
-      </CustomCard>
-      <CustomCard>
-        <CardItems>
-          <i className='fas fa-list-ul'></i>
-          <p>Category</p>
-        </CardItems>
-      </CustomCard>
-      <div>
+      <Container maxWidth="md">
+        <CustomCard>
+          <CardItems>
+            <i className='far fa-clock'></i>
+            <p>Date</p>
+          </CardItems>
+        </CustomCard>
+        <CustomCard>
+          <CardItems>
+            <i className='far fa-sticky-note'></i>
+            <p>Notes</p>
+          </CardItems>
+        </CustomCard>
+        <CustomCard>
+          <CardItems>
+            <i className='fas fa-list-ul'></i>
+            <p>Category</p>
+          </CardItems>
+        </CustomCard>
+      </Container>
+      <ButtonContainer>
         <SaveButton>Save</SaveButton>
-      </div>
+      </ButtonContainer>
     </>
 
   )
@@ -47,8 +48,6 @@ background: -webkit-linear-gradient(to right, #f64f59, #c471ed, #12c2e9);
 background: linear-gradient(to right, #f64f59, #c471ed, #12c2e9);
 position:fixed;
 bottom:50px;
-left:50px;
-right:0;
 border-radius:15px;
 `
 const CustomCard = styled(Card)`
@@ -74,7 +73,7 @@ display:flex;
 flex-direction:column;
 align-items:center;
 justify-content:center;
-font-size:30px;
+font-size:20px;
 margin:50px 0 50px 0;
 `
 const ExpenseContainer =  styled.div`
@@ -87,4 +86,8 @@ width:300px;
 height:60px;
 border-radius:15px;
 font-size:30px;
+`
+const ButtonContainer = styled.div`
+display:flex;
+justify-content:center;
 `
