@@ -1,12 +1,13 @@
 import React from 'react';
 import './index.css';
 import Dashboard from './client/pages/dashboard';
-// import AddExpense from './client/pages/add-expenses';
+import AddExpense from './client/pages/add-expenses';
 // import {Button} from '@mui/material'
 // import styled from '@emotion/styled'
 
 function App() {
-  return <Dashboard/>
+  // return <Dashboard/>
+  return <AddExpense/>
 }
 export default App;
 
