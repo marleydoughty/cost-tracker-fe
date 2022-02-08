@@ -1,6 +1,6 @@
 import { Card } from '@mui/material';
 import styled from '@emotion/styled';
-
+import { Link } from 'react-router-dom';
 const DashboardCards = ()=> {
   return(
     <div>
@@ -22,12 +22,14 @@ const DashboardCards = ()=> {
           <p>Categories</p>
         </CardItems>
       </CustomCard>
-      <CustomCard>
-        <CardItems>
-          <i className='fas fa-plus-circle'></i>
-          <p>Add Expense</p>
-        </CardItems>
-      </CustomCard>
+      <Link to="/add-expenses">
+        <CustomCard>
+          <CardItems>
+            <i className='fas fa-plus-circle'></i>
+            <p>Add Expense</p>
+          </CardItems>
+        </CustomCard>
+      </Link>
     </div>
   )
 }

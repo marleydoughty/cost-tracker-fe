@@ -1,13 +1,39 @@
-import React from 'react';
+import React, {Fragment} from 'react';
 import './index.css';
-// import Dashboard from './client/pages/dashboard';
+import Dashboard from './client/pages/dashboard';
 import AddExpense from './client/pages/add-expenses';
+import {BrowserRouter as Router,Routes,Route, Link} from 'react-router-dom'
 // import {Button} from '@mui/material'
 // import styled from '@emotion/styled'
 
 function App() {
-  // return <Dashboard/>
-  return <AddExpense/>
+    return (
+      <Router>
+        <Fragment>
+          <Link to="/">Dashboard</Link>
+          <Routes>
+            <Route exact path='/' element={<Dashboard />}></Route>
+            <Route exact path='/add-expenses' element={<AddExpense />} />
+          </Routes>
+        </Fragment>
+      </Router>
+      // <Router>
+      //   <div>
+      //     <Link to="/">Dashboard</Link>
+      //     <Link to="/add-expenses">Add Expenses</Link>
+      //     {/* A <Switch> looks through its children <Route>s and
+      //       renders the first one that matches the current URL. */}
+      //     <Routes>
+      //       <Route path="/">
+      //         <Dashboard />
+      //       </Route>
+      //       <Route path="/add-expenses">
+      //         <AddExpense />
+      //       </Route>
+      //     </Routes>
+      //   </div>
+      // </Router>
+    );
 }
 export default App;
 

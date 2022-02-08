@@ -5,8 +5,8 @@ import { Container } from '@mui/material'
 import BottomNavBar from "../components/bottom-nav-bar";
 import Header from "../components/header";
 import DashboardCards from "../components/dashboard-cards";
-export default function Dashboard() {
 
+export default function Dashboard() {
   return (
     <div className="App">
       <Header/>

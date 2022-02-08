@@ -2,6 +2,7 @@ import { Button } from '@mui/material'
 import styled from '@emotion/styled'
 import {Card} from '@mui/material'
 import { Container } from '@mui/material'
+import BottomNavBar from '../components/bottom-nav-bar'
 const AddExpense = () =>{
   return(
     <>
@@ -32,8 +33,8 @@ const AddExpense = () =>{
       <ButtonContainer>
         <SaveButton>Save</SaveButton>
       </ButtonContainer>
+      <BottomNavBar/>
     </>
-
   )
 }
 export default AddExpense
