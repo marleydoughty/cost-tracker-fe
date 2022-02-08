@@ -22,14 +22,14 @@ const DashboardCards = ()=> {
           <p>Categories</p>
         </CardItems>
       </CustomCard>
-      <Link to="/add-expenses">
+      <CustomLink to="/add-expenses">
         <CustomCard>
           <CardItems>
             <i className='fas fa-plus-circle'></i>
             <p>Add Expense</p>
           </CardItems>
         </CustomCard>
-      </Link>
+      </CustomLink>
     </div>
   )
 }
@@ -53,4 +53,7 @@ i {
   font-size:26px;
   margin:0 15px 0 15px;
 }
+`
+const CustomLink = styled(Link)`
+text-decoration:none;
 `

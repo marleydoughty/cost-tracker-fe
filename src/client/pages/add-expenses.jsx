@@ -3,6 +3,7 @@ import styled from '@emotion/styled'
 import {Card} from '@mui/material'
 import { Container } from '@mui/material'
 import BottomNavBar from '../components/bottom-nav-bar'
+import {Link} from 'react-router-dom'
 const AddExpense = () =>{
   return(
     <>
@@ -30,9 +31,12 @@ const AddExpense = () =>{
           </CardItems>
         </CustomCard>
       </Container>
-      <ButtonContainer>
-        <SaveButton>Save</SaveButton>
-      </ButtonContainer>
+      <Link to="/">
+        <ButtonContainer>
+          <SaveButton>Save</SaveButton>
+        </ButtonContainer>
+      </Link>
+
       <BottomNavBar/>
     </>
   )
@@ -48,7 +52,7 @@ background: #12c2e9;
 background: -webkit-linear-gradient(to right, #f64f59, #c471ed, #12c2e9);
 background: linear-gradient(to right, #f64f59, #c471ed, #12c2e9);
 position:fixed;
-bottom:50px;
+bottom:150px;
 border-radius:15px;
 `
 const CustomCard = styled(Card)`

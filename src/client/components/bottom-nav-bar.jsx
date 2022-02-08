@@ -2,13 +2,17 @@ import React from 'react'
 import { BottomNavigation } from '@mui/material';
 import { BottomNavigationAction } from '@mui/material';
 import styled from '@emotion/styled';
-// import {Link} from 'react-router-dom'
+import {Link} from 'react-router-dom'
+
 export default function BottomNavBar() {
   return (
-    <FixedBottomNavBar showLabels>
-      <NavBarItems label="Dashboard" />
-      <NavBarItems label="Settings" />
-    </FixedBottomNavBar>
+    <Link to="/">
+      <FixedBottomNavBar showLabels>
+        <NavBarItems label="Dashboard" />
+        <NavBarItems label="Settings" />
+      </FixedBottomNavBar>
+    </Link>
+
   )
 }
 

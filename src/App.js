@@ -10,7 +10,6 @@ function App() {
     return (
       <Router>
         <Fragment>
-          <Link to="/">Dashboard</Link>
           <Routes>
             <Route exact path='/' element={<Dashboard />}></Route>
             <Route exact path='/add-expenses' element={<AddExpense />} />
