@@ -1,12 +1,13 @@
 import BottomNavBar from "../components/bottom-nav-bar";
 import { Card, Button } from '@mui/material';
 import styled from '@emotion/styled';
-
+import TopNavBarComp from "../components/top-nav-bar";
 const Settings = () =>{
   return (
     <>
     <Header>
       <h2>Settings</h2>
+      <TopNavBarComp/>
     </Header>
       <CustomCard>
         <p>User: John Doe</p>

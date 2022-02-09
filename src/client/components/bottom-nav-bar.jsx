@@ -20,6 +20,10 @@ right:0;
 bottom:0;
 height:75px;
 box-shadow: 0 0 6px rgba(0,0,0,.4);
+
+@media only screen and (min-width: 600px){
+  display:none;
+}
 `
 const NavBarItems = styled(BottomNavigationAction)`
 span {

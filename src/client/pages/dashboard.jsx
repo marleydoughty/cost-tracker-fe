@@ -1,15 +1,17 @@
 import React from "react";
 import styled from '@emotion/styled'
-import { Card } from '@mui/material'
-import { Container } from '@mui/material'
 import BottomNavBar from "../components/bottom-nav-bar";
 import Header from "../components/header";
 import DashboardCards from "../components/dashboard-cards";
-
+import TopNavBar from "../components/top-nav-bar";
+import { Card, Container } from "@mui/material";
 const Dashboard = () => {
   return (
     <div className="App">
-      <Header/>
+      <HeaderContainer>
+        <Header />
+        <TopNavBar/>
+      </HeaderContainer>
       <Container maxWidth="md">
         <BalanceCard varient="outlined">
           <BalanceCardItems>
@@ -55,4 +57,9 @@ const BalanceCardItems = styled.div`
   font-size: 36px;
 
   }
+`
+const HeaderContainer = styled.div`
+display:flex;
+justify-content:space-between;
+align-items:center;
 `
