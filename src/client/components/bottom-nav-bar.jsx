@@ -1,17 +1,16 @@
 import React from 'react'
 import { BottomNavigation, BottomNavigationAction } from '@mui/material';
 import styled from '@emotion/styled';
-import {Link} from 'react-router-dom'
+import {useNavigate} from 'react-router-dom'
 
 export default function BottomNavBar() {
-  return (
-    <Link to="/">
-      <FixedBottomNavBar showLabels>
-        <NavBarItems label="Dashboard" />
-        <NavBarItems label="Settings" />
-      </FixedBottomNavBar>
-    </Link>
+  const navigate = useNavigate()
 
+  return (
+      <FixedBottomNavBar showLabels>
+        <NavBarItems label="Dashboard" onClick={() => navigate('/')} />
+        <NavBarItems label="Settings" onClick={() => navigate('/settings')}/>
+      </FixedBottomNavBar>
   )
 }
 
