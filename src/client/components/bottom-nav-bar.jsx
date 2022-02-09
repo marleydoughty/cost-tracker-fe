@@ -1,6 +1,5 @@
 import React from 'react'
-import { BottomNavigation } from '@mui/material';
-import { BottomNavigationAction } from '@mui/material';
+import { BottomNavigation, BottomNavigationAction } from '@mui/material';
 import styled from '@emotion/styled';
 import {Link} from 'react-router-dom'
 

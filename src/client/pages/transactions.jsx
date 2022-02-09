@@ -1,14 +1,13 @@
-import styled from '@emotion/styled'
-import {Button, Card, Container} from '@mui/material'
-import BottomNavBar from '../components/bottom-nav-bar'
-import {Link} from 'react-router-dom'
-
-const AddExpenses = () =>{
+import React from 'react';
+import {Link} from 'react-router-dom';
+import {Card, Container, Button} from '@mui/material';
+import styled from '@emotion/styled';
+import BottomNavBar from '../components/bottom-nav-bar';
+const Transactions = () =>{
   return(
     <>
       <Header>
-        <h2>Add Expenses</h2>
-        <ExpenseContainer>$0</ExpenseContainer>
+        <h2>Transactions</h2>
       </Header>
       <Container maxWidth="md">
         <CustomCard>
@@ -39,8 +38,7 @@ const AddExpenses = () =>{
     </>
   )
 }
-export default AddExpenses
-
+export default Transactions;
 const SaveButton = styled(Button)`
 width:300px;
 height:60px;
@@ -79,17 +77,7 @@ justify-content:center;
 font-size:20px;
 margin:50px 0 50px 0;
 `
-const ExpenseContainer =  styled.div`
-margin-top:20px;
-display:flex;
-align-items:center;
-justify-content:center;
-background-color:white;
-width:300px;
-height:60px;
-border-radius:15px;
-font-size:30px;
-`
+
 const ButtonContainer = styled.div`
 display:flex;
 justify-content:center;

@@ -1,15 +1,18 @@
 import { Card } from '@mui/material';
 import styled from '@emotion/styled';
 import { Link } from 'react-router-dom';
+
 const DashboardCards = ()=> {
   return(
     <div>
-      <CustomCard>
-        <CardItems>
-          <i className='fas fa-credit-card'></i>
-          <p>Transactions</p>
-        </CardItems>
-      </CustomCard>
+      <CustomLink to="/transactions">
+        <CustomCard>
+          <CardItems>
+            <i className='fas fa-credit-card'></i>
+            <p>Transactions</p>
+          </CardItems>
+        </CustomCard>
+      </CustomLink>
       <CustomCard>
         <CardItems>
           <i className='fas fa-history'></i>
