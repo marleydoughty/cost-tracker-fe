@@ -1,5 +1,6 @@
-import React from 'react'
-import {ToggleButtonGroup, ToggleButton} from '@mui/material'
+import React from 'react';
+import {ToggleButtonGroup, ToggleButton} from '@mui/material';
+
  const ToggleSwitch = () =>{
    return(
      <ToggleButtonGroup

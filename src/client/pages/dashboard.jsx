@@ -6,7 +6,7 @@ import BottomNavBar from "../components/bottom-nav-bar";
 import Header from "../components/header";
 import DashboardCards from "../components/dashboard-cards";
 
-export default function Dashboard() {
+const Dashboard = () => {
   return (
     <div className="App">
       <Header/>
@@ -23,7 +23,7 @@ export default function Dashboard() {
     </div>
   );
 }
-
+export default Dashboard;
 
 const BalanceCard = styled(Card)`
   display: flex;

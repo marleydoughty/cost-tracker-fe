@@ -1,11 +1,10 @@
-import React from 'react'
+import React from 'react';
 import { BottomNavigation, BottomNavigationAction } from '@mui/material';
 import styled from '@emotion/styled';
-import {useNavigate} from 'react-router-dom'
+import {useNavigate} from 'react-router-dom';
 
-export default function BottomNavBar() {
+const BottomNavBar = () => {
   const navigate = useNavigate()
-
   return (
       <FixedBottomNavBar showLabels>
         <NavBarItems label="Dashboard" onClick={() => navigate('/')} />
@@ -13,7 +12,7 @@ export default function BottomNavBar() {
       </FixedBottomNavBar>
   )
 }
-
+export default BottomNavBar;
 const FixedBottomNavBar = styled(BottomNavigation)`
 position: fixed;
 left:0;

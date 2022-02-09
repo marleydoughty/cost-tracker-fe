@@ -1,6 +1,7 @@
 import BottomNavBar from "../components/bottom-nav-bar";
 import { Card, Button } from '@mui/material';
 import styled from '@emotion/styled';
+
 const Settings = () =>{
   return (
     <>

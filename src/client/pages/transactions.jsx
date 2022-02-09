@@ -24,6 +24,7 @@ const Transactions = () =>{
   )
 }
 export default Transactions;
+
 const CustomCard = styled(Card)`
 margin:15px;
 width:auto;

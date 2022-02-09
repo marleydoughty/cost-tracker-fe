@@ -1,7 +1,7 @@
-import styled from '@emotion/styled'
-import {Button, Card, Container} from '@mui/material'
-import BottomNavBar from '../components/bottom-nav-bar'
-import {Link} from 'react-router-dom'
+import styled from '@emotion/styled';
+import {Button, Card, Container} from '@mui/material';
+import BottomNavBar from '../components/bottom-nav-bar';
+import {Link} from 'react-router-dom';
 
 const AddExpenses = () =>{
   return(
