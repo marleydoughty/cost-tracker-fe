@@ -1,5 +1,5 @@
 import BottomNavBar from "../components/bottom-nav-bar";
-import { Card } from '@mui/material';
+import { Card, Button } from '@mui/material';
 import styled from '@emotion/styled';
 const Settings = () =>{
   return (
@@ -9,7 +9,7 @@ const Settings = () =>{
     </Header>
       <CustomCard>
         <p>User: John Doe</p>
-        <button>Sign out</button>
+        <SignoutButton>Sign out</SignoutButton>
       </CustomCard>
       <BottomNavBar/>
     </>
@@ -34,4 +34,9 @@ margin: 60px 15px 60px 15px;
 padding:50px 20px 50px 20px;
 box-shadow: 0 2px 4px rgba(0,0,0,.4);
 border-radius: 15px;
+`
+const SignoutButton = styled(Button)`
+color:white;
+border:solid thin white;
+width:150px;
 `
