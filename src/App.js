@@ -3,6 +3,7 @@ import './index.css';
 import Dashboard from './client/pages/dashboard';
 import AddExpenses from './client/pages/add-expenses';
 import Transactions from './client/pages/transactions';
+import Settings from './client/pages/settings';
 import {BrowserRouter as Router,Routes,Route} from 'react-router-dom'
 // import {Button} from '@mui/material'
 // import styled from '@emotion/styled'
@@ -15,6 +16,7 @@ function App() {
             <Route exact path='/' element={<Dashboard />}></Route>
             <Route  path='/add-expenses' element={<AddExpenses />} />
             <Route  path='/transactions' element={<Transactions />} />
+            <Route path='/settings' element={<Settings/>}/>
           </Routes>
         </Fragment>
       </Router>
