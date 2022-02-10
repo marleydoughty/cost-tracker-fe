@@ -3,15 +3,17 @@ import {Card, Container} from '@mui/material';
 import styled from '@emotion/styled';
 import BottomNavBar from '../components/bottom-nav-bar';
 import ToggleSwitch from '../components/toggle-switch';
+import TopNavBar from '../components/top-nav-bar';
 
 const Transactions = () =>{
   return(
     <>
-      <Header>
-        <h2>Transactions</h2>
-        <ToggleSwitch/>
-      </Header>
       <Container maxWidth="md">
+        <Header>
+          <h2>Transactions</h2>
+          <TopNavBar/>
+        </Header>
+        <ToggleSwitch />
         <CustomCard>
           <CardItems>
             <i className='far fa-clock'></i>
@@ -45,9 +47,11 @@ i {
 `
 const Header = styled.div`
 display:flex;
-flex-direction:column;
 align-items:center;
 justify-content:center;
 font-size:20px;
 margin:50px 0 50px 0;
+@media only screen and (min-width:600px){
+justify-content: space-between;
+}
 `

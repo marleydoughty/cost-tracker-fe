@@ -1,19 +1,21 @@
 import BottomNavBar from "../components/bottom-nav-bar";
-import { Card, Button } from '@mui/material';
+import { Card, Button, Container } from '@mui/material';
 import styled from '@emotion/styled';
 import TopNavBar from "../components/top-nav-bar";
 const Settings = () =>{
   return (
     <>
-    <Header>
-      <h2>Settings</h2>
-      <TopNavBar/>
-    </Header>
+    <Container maxWidth="md">
+      <Header>
+        <h2>Settings</h2>
+        <TopNavBar />
+      </Header>
       <CustomCard>
         <p>User: John Doe</p>
         <SignoutButton>Sign out</SignoutButton>
       </CustomCard>
-      <BottomNavBar/>
+      <BottomNavBar />
+    </Container>
     </>
   )
 }
@@ -24,6 +26,10 @@ display:flex;
 justify-content:center;
 font-size:20px;
 margin:50px 0 50px 0;
+
+@media only screen and (min-width: 600px){
+  justify-content:space-between;
+}
 `
 const CustomCard = styled(Card)`
 display: flex;
