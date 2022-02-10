@@ -2,15 +2,16 @@ import styled from '@emotion/styled';
 import {Button, Card, Container} from '@mui/material';
 import BottomNavBar from '../components/bottom-nav-bar';
 import {Link} from 'react-router-dom';
-
+import TopNavBar from '../components/top-nav-bar';
 const AddExpenses = () =>{
   return(
     <>
-      <Header>
-        <h2>Add Expenses</h2>
-        <ExpenseContainer>$0</ExpenseContainer>
-      </Header>
       <Container maxWidth="md">
+        <Header>
+          <h2>Add Expenses</h2>
+          <TopNavBar/>
+        </Header>
+        <ExpenseContainer>$0</ExpenseContainer>
         <CustomCard>
           <CardItems>
             <i className='far fa-clock'></i>
@@ -73,11 +74,13 @@ i {
 `
 const Header = styled.div`
 display:flex;
-flex-direction:column;
 align-items:center;
 justify-content:center;
 font-size:20px;
 margin:50px 0 50px 0;
+@media only screen and (min-width:600px){
+  justify-content:space-between;
+}
 `
 const ExpenseContainer =  styled.div`
 margin-top:20px;
