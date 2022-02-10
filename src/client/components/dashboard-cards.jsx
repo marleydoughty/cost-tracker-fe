@@ -13,12 +13,14 @@ const DashboardCards = ()=> {
           </CardItems>
         </CustomCard>
       </CustomLink>
-      <CustomCard>
-        <CardItems>
-          <i className='fas fa-history'></i>
-          <p>Statements</p>
-        </CardItems>
-      </CustomCard>
+      <CustomLink to='/statements'>
+        <CustomCard>
+          <CardItems>
+            <i className='fas fa-history'></i>
+            <p>Statements</p>
+          </CardItems>
+        </CustomCard>
+      </CustomLink>
       <CustomCard>
         <CardItems>
           <i className='fas fa-list-ul'></i>
