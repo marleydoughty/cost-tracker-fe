@@ -5,6 +5,7 @@ import AddExpenses from './client/pages/add-expenses';
 import Transactions from './client/pages/transactions';
 import Settings from './client/pages/settings';
 import Statements from './client/pages/statements';
+import Categories from './client/pages/categories';
 import {BrowserRouter as Router,Routes,Route} from 'react-router-dom'
 // import {Button} from '@mui/material'
 // import styled from '@emotion/styled'
@@ -18,7 +19,8 @@ function App() {
             <Route  path='/add-expenses' element={<AddExpenses />} />
             <Route  path='/transactions' element={<Transactions />} />
             <Route path='/settings' element={<Settings />} />
-            <Route path='/statements' element={<Statements/>}/>
+            <Route path='/statements' element={<Statements />} />
+            <Route path='/categories' element={<Categories/>}/>
           </Routes>
         </Fragment>
       </Router>

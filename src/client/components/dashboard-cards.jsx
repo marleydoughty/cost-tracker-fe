@@ -21,12 +21,14 @@ const DashboardCards = ()=> {
           </CardItems>
         </CustomCard>
       </CustomLink>
-      <CustomCard>
-        <CardItems>
-          <i className='fas fa-list-ul'></i>
-          <p>Categories</p>
-        </CardItems>
-      </CustomCard>
+      <CustomLink to='/categories'>
+        <CustomCard>
+          <CardItems>
+            <i className='fas fa-list-ul'></i>
+            <p>Categories</p>
+          </CardItems>
+        </CustomCard>
+      </CustomLink>
       <CustomLink to="/add-expenses">
         <CustomCard>
           <CardItems>
