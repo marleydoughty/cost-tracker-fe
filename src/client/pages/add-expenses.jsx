@@ -53,6 +53,10 @@ background: linear-gradient(to right, #f64f59, #c471ed, #12c2e9);
 position:fixed;
 bottom:150px;
 border-radius:15px;
+@media only screen and (min-width:600px){
+  position:fixed;
+  bottom:100px;
+}
 `
 const CustomCard = styled(Card)`
 margin:15px;
