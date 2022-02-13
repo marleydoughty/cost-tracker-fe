@@ -11,7 +11,9 @@ const AddExpenses = () =>{
           <h2>Add Expenses</h2>
           <TopNavBar/>
         </Header>
-        <ExpenseContainer>$0</ExpenseContainer>
+        <ExpenseContainer>
+          <div>$0</div>
+        </ExpenseContainer>
         <CustomCard>
           <CardItems>
             <i className='far fa-clock'></i>
@@ -91,11 +93,15 @@ margin-top:20px;
 display:flex;
 align-items:center;
 justify-content:center;
+
+div {
 background-color:white;
 width:300px;
 height:60px;
 border-radius:15px;
 font-size:30px;
+align-items:center;
+}
 `
 const ButtonContainer = styled.div`
 display:flex;
