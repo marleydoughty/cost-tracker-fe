@@ -17,8 +17,7 @@ const NavBarContainer = styled(BottomNavigation)`
 font-size:25px;
 display:flex;
 border-radius:15px;
-margin: 40px 0 0 20px;
-
+// margin: 40px 0 0 20px;
 @media only screen and (max-width:600px){
   display:none;
 };
