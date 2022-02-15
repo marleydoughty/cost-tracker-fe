@@ -57,7 +57,7 @@ bottom:150px;
 border-radius:15px;
 @media only screen and (min-width:600px){
   position:fixed;
-  bottom:100px;
+  bottom:25px;
 }
 `
 const CustomCard = styled(Card)`

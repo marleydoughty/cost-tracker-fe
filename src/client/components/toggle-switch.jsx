@@ -1,17 +1,21 @@
 import React from 'react';
 import {ToggleButtonGroup, ToggleButton} from '@mui/material';
-
+import styled from '@emotion/styled'
  const ToggleSwitch = () =>{
    return(
-     <ToggleButtonGroup
+     <ToggleButtonContainer
        color="primary"
       //  value={alignment}
        exclusive
      >
        <ToggleButton value="income">income</ToggleButton>
        <ToggleButton value="expenses">expenses</ToggleButton>
-     </ToggleButtonGroup>
+     </ToggleButtonContainer>
 
    )
  }
 export default ToggleSwitch;
+const ToggleButtonContainer = styled(ToggleButtonGroup)`
+display:flex;
+justify-content:center;
+`
