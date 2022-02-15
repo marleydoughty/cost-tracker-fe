@@ -18,7 +18,6 @@ const HeaderContainer = styled.div`
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  margin: 40px 0 0 20px;
 `
 const HeaderGreeting = styled.div`
   margin-left:7px;

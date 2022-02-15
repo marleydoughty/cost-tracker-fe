@@ -62,5 +62,5 @@ const HeaderContainer = styled.div`
 display:flex;
 justify-content:space-between;
 align-items:center;
-
+margin: 40px 20px 0 20px;
 `
