@@ -12,7 +12,9 @@ const AddExpenses = () =>{
           <TopNavBar/>
         </Header>
         <ExpenseContainer>
-          <div>$0</div>
+          <div>
+            <p>$0</p>
+          </div>
         </ExpenseContainer>
         <CustomCard>
           <CardItems>
@@ -101,6 +103,10 @@ height:60px;
 border-radius:15px;
 font-size:30px;
 align-items:center;
+}
+div {
+  display:flex;
+  justify-content:center;
 }
 `
 const ButtonContainer = styled.div`
