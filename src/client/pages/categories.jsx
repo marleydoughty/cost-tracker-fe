@@ -11,7 +11,6 @@ const Categories = () =>{
           <h2>Categories</h2>
           <TopNavBar />
         </Header>
-        <img src='https://upload.wikimedia.org/wikipedia/commons/6/63/Pie-chart.jpg' alt='pie-chart'/>
       </Container>
       <BottomNavBar />
     </>
