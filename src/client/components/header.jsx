@@ -7,7 +7,7 @@ const Header = () =>{
       <Avatar alt="avatar" src="/avatar-icon.png" />
       <HeaderGreeting>
         <h4>Welcome!</h4>
-        <p>John Doe</p>
+        <p>Marley Doughty</p>
       </HeaderGreeting>
     </HeaderContainer>
   )
