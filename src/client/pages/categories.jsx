@@ -11,7 +11,9 @@ const Categories = () =>{
           <h2>Categories</h2>
           <TopNavBar />
         </Header>
-        <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsJ2SDZZ0hZG7h3MXlLrn_EdGynLQ14w2Y5ZkaD5sVZNpj0ShGMaFsevg23BMBdIcop24&usqp=CAU' alt='pie-chart'/>
+        <ImageContainer>
+          <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsJ2SDZZ0hZG7h3MXlLrn_EdGynLQ14w2Y5ZkaD5sVZNpj0ShGMaFsevg23BMBdIcop24&usqp=CAU' alt='pie-chart' />
+        </ImageContainer>
       </Container>
       <BottomNavBar />
     </>
@@ -28,4 +30,8 @@ margin:50px 0 50px 0;
 @media only screen and (min-width:600px){
   justify-content:space-between;
 }
+`
+const ImageContainer = styled.div`
+display:flex;
+justify-content:center;
 `
