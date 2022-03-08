@@ -10,6 +10,7 @@ const Statements = () =>{
           <h2>Statements</h2>
           <TopNavBar />
         </Header>
+        <div>months</div>
       </Container>
       <BottomNavBar />
     </>
